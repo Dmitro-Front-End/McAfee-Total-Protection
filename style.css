@@ -290,15 +290,14 @@ footer {
 
 
 
-@media screen and (max-width: 450px){
+@media screen and (max-width: 380px){
   .content {
     justify-content: center;
   }
   .elem {
     width: 260px;
-   /* height: 220px; */
   }
   .price-content {
-    width: 200px;
+    width: 185px;
   }
 }
