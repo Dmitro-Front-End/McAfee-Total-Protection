@@ -1,0 +1,283 @@
+/* fonts */
+@import url("https://fonts.cdnfonts.com/css/bebas-neue");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300..800&family=Roboto:wght@400;500;700&display=swap");
+
+/* var */
+:root {
+  --header-bg: rgb(0, 0, 0);
+  --footer-bg: rgb(0, 0, 0);
+  --body-bg: rgb(229, 229, 229);
+  --white-bg: rgb(255, 255, 255);
+  --logo-color-text: rgb(255, 184, 0);
+  --white-color-text: rgb(255, 255, 255);
+  --black-colot-text: rgb(0, 0, 0);
+}
+/* -------- zero ---------- */
+* {
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  text-decoration: none;
+}
+
+/* -------- display ---------- */
+.flex-end {
+  display: flex;
+  align-items: flex-end;
+}
+.flex-row {
+  align-items: center;
+  display: flex;
+}
+.center-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cente-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* -------- text ---------- */
+.title-logo {
+  color: var(--logo-color-text);
+  font-family: "Roboto", sans-serif;
+  font-size: 21px;
+  font-weight: 500;
+  line-height: 25px;
+  text-transform: uppercase;
+}
+/* -------- size ---------- */
+.max-width {
+  max-width: 1138px;
+  width: 98%;
+}
+
+/* --- control ----- */
+.disabled {
+  pointer-events: none;
+}
+/* -------- body ---------- */
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+  background: var(--body-bg);
+}
+/* -------- header ---------- */
+header {
+  background: var(--header-bg);
+  height: 49px;
+  min-height: 49px;
+}
+
+.header-logo-desc {
+  color: var(--white-color-text);
+  font-family: "Open Sans", sans-serif;
+  font-size: 21px;
+  font-weight: 300;
+  border-left: 1px solid var(--white-color-text);
+  padding-left: 11.5px;
+  margin-left: 10.5px;
+}
+/* -------- main ---------- */
+main {
+  padding: 30px 0;
+}
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 75px 29px;
+}
+.title-main {
+  color: var(--black-colot-text);
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 48px;
+  margin-bottom: 106px;
+  text-align: center;
+}
+.elem {
+  position: relative;
+  background: rgb(243, 245, 246);
+  width: 360px;
+  height: 220px;
+  justify-content: flex-start;
+}
+.price-content {
+  position: absolute;
+  top: -50px;
+
+  width: 240px;
+  height: 100px;
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+  background: var(--white-bg);
+}
+.price-content-dop-text {
+  margin-top: 10px;
+}
+.price {
+  color: var(--black-colot-text);
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 48px;
+}
+.price-type {
+  color: var(--black-colot-text);
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 29px;
+}
+
+/* advertise */
+.advertist-best {
+  color: rgb(43, 41, 41);
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 14px;
+
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: rgb(255, 184, 0);
+  padding: 4px 14px;
+}
+
+.advertist-discount {
+  position: absolute;
+  top: -13px;
+  left: -12px;
+  width: 89px;
+}
+.price-old {
+  color: rgb(146, 146, 146);
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0%;
+  text-align: center;
+  text-decoration-line: line-through;
+}
+.elem-title {
+  margin-top: 71px;
+  color: var(--black-colot-text);
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
+}
+.elem-desc {
+  color: var(--black-colot-text);
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 21px;
+}
+.btn-download {
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  background: linear-gradient(
+    0deg,
+    rgb(19, 9, 153) -0.014%,
+    rgb(23, 77, 143) 35.008%,
+    rgb(26, 127, 135) 64.91%,
+    rgb(28, 158, 131) 87.441%,
+    rgb(29, 170, 129) 99.992%
+  );
+
+  gap: 20px;
+  width: 190px;
+  height: 50px;
+  border-radius: 30px;
+  margin-top: 31px;
+  cursor: pointer;
+}
+.btn-download-text {
+  margin-left: 25px;
+  color: var(--white-color-text);
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 21px;
+}
+
+/* -------- footer ---------- */
+footer {
+  background: var(--footer-bg);
+  height: 70px;
+  min-height: 70px;
+}
+.footer-text-desc {
+  color: var(--white-color-text);
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 27px;
+}
+/* ------- download-arrow ----------- */
+.download-arrow {
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  background: rgb(54, 131, 247);
+  position: fixed;
+  width: 160px;
+  height: 135px;
+  opacity: 0;
+  z-index: -1;
+}
+.download-arrow::after,
+.download-arrow::before {
+  content: "";
+  border-left: 80px solid transparent;
+  border-right: 80px solid transparent;
+  border-top: 55px solid transparent;
+  border-bottom: 55px solid transparent;
+  width: 0;
+  height: 0;
+  position: absolute;
+}
+.download-arrow-top {
+  top: 105px;
+  right: 12px;
+  opacity: 1;
+  z-index: 999;
+}
+.download-arrow-top::before {
+  top: -108px;
+  border-bottom-color: rgb(54, 131, 247);
+}
+
+.download-arrow-bottom {
+  left: 12px;
+  bottom: 125px;
+  opacity: 1;
+  z-index: 999;
+}
+.download-arrow-bottom::after {
+  top: 135px;
+  border-top-color: rgb(54, 131, 247);
+}
+.download-arrow h1 {
+  color: var(--white-color-text);
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 72px;
+  font-weight: 700;
+  line-height: 72px;
+}
+.download-arrow p {
+  color: var(--white-color-text);
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 24px;
+}
