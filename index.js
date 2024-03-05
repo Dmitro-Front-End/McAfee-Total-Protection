@@ -4,8 +4,7 @@ const api = "https://veryfast.io/t/front_test_api.php";
 
 const xhr = new XMLHttpRequest();
 
-const createBoxes = (array) =>
-  (containerShops.innerHTML = array.map(
+const createBoxes = (array) => containerShops.innerHTML = array.map(
     ({
       product_key,
       is_best,
@@ -66,8 +65,8 @@ const createBoxes = (array) =>
     </a>
   </div>`;
     }
-  ));
-
+  ).join('')
+  
 const getData = (url = api) => {
   xhr.open("GET", url, true);
   xhr.onload = function () {

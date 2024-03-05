@@ -281,3 +281,24 @@ footer {
   font-weight: 400;
   line-height: 24px;
 }
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 450px){
+  .content {
+    justify-content: center;
+  }
+  .elem {
+    width: 260px;
+   /* height: 220px; */
+  }
+  .price-content {
+    width: 200px;
+  }
+}
